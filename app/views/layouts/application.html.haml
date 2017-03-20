@@ -40,13 +40,11 @@
               %a{:href => "#page-top"}
             %li
               %a.page-scroll{:href => "#services"} Serviços
-            %li
+            -#%li
               %a.page-scroll{:href => "#portfolio"} Portfolio
             %li
               %a.page-scroll{:href => "#about"} Sobre
-            %li
-              %a.page-scroll{:href => "#team"} Time
-            %li
+            -#%li
               %a.page-scroll{:href => "#contact"} Contato
         / /.navbar-collapse
       / /.container-fluid
@@ -58,7 +56,7 @@
           .intro-heading O que seu negócio precisar
           %a.page-scroll.btn.btn-xl{:href => "#services"} Saiba mais
     / Services Section
-    %section#services
+    %section#services.bg-light-gray
       .container
         .row
           .col-lg-12.text-center
@@ -84,7 +82,7 @@
             %h4.service-heading Web Security
             %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
     / Portfolio Grid Section
-    %section#portfolio.bg-light-gray
+    -#%section#portfolio.bg-light-gray
       .container
         .row
           .col-lg-12.text-center
@@ -162,7 +160,7 @@
                 .timeline-panel
                   .timeline-heading
                     %h4 2012-2017
-                    %h4.subheading Formação Acadêmica
+                    %h4.subheading Começo da Formação Acadêmica
                   .timeline-body
                     %p.text-muted
                       Formação acadêmica em Ciência da Computação pela UFRJ. Considerada por muitos a melhor faculdade
@@ -173,28 +171,48 @@
                   %img.img-circle.img-responsive{:alt => "", :src => "images/about/2.jpg"}/
                 .timeline-panel
                   .timeline-heading
-                    %h4 March 2011
-                    %h4.subheading An Agency is Born
+                    %h4 2013 - 2014
+                    %h4.subheading EJCM - Empresa Jr.
                   .timeline-body
-                    %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                    %p.text-muted
+                      Participação na Empresa Junior EJCM como assessor de Projetos e Desenvolvedor Web.
+                      Aplicação de gerencia de projetos e métodos ágeis como Scrum e Kanban.
+                      Desenvolvimento de projetos web utilizando PHP, Laravel, HTML, CSS e JS.
+
               %li
                 .timeline-image
                   %img.img-circle.img-responsive{:alt => "", :src => "images/about/3.jpg"}/
                 .timeline-panel
                   .timeline-heading
-                    %h4 December 2012
-                    %h4.subheading Transition to Full Service
+                    %h4 2014 - 2015
+                    %h4.subheading Trabalho como Freelancer
                   .timeline-body
-                    %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                    %p.text-muted
+                      Desenvolvimento de múltiplos projetos como freelancer após saída da empresa junior.
+                      Experiência em lidar com clientes e atender necessidades de negócios.
+
               %li.timeline-inverted
                 .timeline-image
                   %img.img-circle.img-responsive{:alt => "", :src => "images/about/4.jpg"}/
                 .timeline-panel
                   .timeline-heading
-                    %h4 July 2014
-                    %h4.subheading Phase Two Expansion
+                    %h4 2015 - 2017
+                    %h4.subheading Intercâmbio para Irlanda
                   .timeline-body
-                    %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                    %p.text-muted
+                      Intercâmbio para a Irlanda pelo Ciência Sem Fronteira me deu proficiência no inglês
+                      e experiência em lidar com culturas diferentes.
+              %li
+                .timeline-image
+                  %img.img-circle.img-responsive{:alt => "", :src => "images/about/2.jpg"}/
+                .timeline-panel
+                  .timeline-heading
+                    %h4 2015 - 2017
+                    %h4.subheading Volta ao Brasil e Estágio no famoso site Tudo Gostoso
+                  .timeline-body
+                    %p.text-muted
+                      Intercâmbio para a Irlanda pelo Ciência Sem Fronteira me deu proficiência no inglês
+                      e experiência em lidar com culturas diferentes.
               %li.timeline-inverted
                 .timeline-image
                   %h4
@@ -276,7 +294,7 @@
             %a{:href => "#"}
               %img.img-responsive.img-centered{:alt => "", :src => "images/logos/creative-market.jpg"}/
     / Contact Section
-    %section#contact
+    -#%section#contact
       .container
         .row
           .col-lg-12.text-center
@@ -304,7 +322,7 @@
                 .col-lg-12.text-center
                   #success
                   %button.btn.btn-xl{:type => "submit"} Enviar mensagem
-    %footer
+    %footer.bg-light-gray
       .container
         .row
           .col-md-4
